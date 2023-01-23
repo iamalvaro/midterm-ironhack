@@ -8,12 +8,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+    
+  color: #292e47;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f2f4fc; 
 }
 
+h2 {
+  font-size: 2.5em;
+}
 
 
 /* ------------------------------------------------------------------------ */
@@ -30,19 +37,159 @@ body {
 
 /* ------------------------------ Navbar ------------------------------ */
 
-/* Your CSS code goes here */
+nav {
+  display: flex;
+  margin: 75px 160px;
+  justify-content: space-between;
+  align-items: center;   
+}
 
+nav ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+nav ul a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #6B708D;
+  font-size: 1.1em; 
+  font-weight: 500;
+}
+
+ nav ul :hover {
+  color: #43d2ff; 
+ }
+
+nav button {
+  background-color: var(--primary);
+  padding: 15px 25px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
 /* ------------------------------ Header ------------------------------ */
 
-/* Your CSS code goes here */
+main {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px auto;  
+}
+main  > div {
+  flex: 1;
+  /* flex-basis: 100%; */
+}
+
+main h1 {
+  font-size: 3.75em;
+  width: 70%;
+  color: #292e47;
+}
+main p {
+  font-size: 1.25em;
+  color: #6B708D;
+  width: 68%; 
+  text-align: justify;
+  margin: 30px 0;
+}
+
+main button {
+  background-color: var(--primary);
+  padding: 15px 15px;
+  color: white;
+  font-weight: 600;
+  border: none;  
+}
+
+main a {
+  text-decoration: none;
+  color: #6B708D;
+  font-size: 1.1em; 
+  font-weight: 500;
+  /* padding: 0 0 0 0; */
+  margin: 0 30px;
+}
+
+.banner-img {
+  position: relative;
+  /* margin: 0 250px 50px 0; */
+  align-self: center;
+}
+
+.banner-img img:first-child {
+ /* position: absolute; */
+ width: 70%;
+ 
+ margin: 0 ;
+ 
+}
+.banner-img img:nth-child(2){
+  position: absolute;
+  left: -19%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 45%;
+  
+}
+.banner-img img:nth-child(3){
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 10%;
+  bottom: -22%;
+  max-width: 45%;
+  z-index: 2;
+ 
+}
 
 /* ------------------------------ Partners ------------------------------ */
 
-/* Your CSS code goes here */
+#img-carrousel {
+  width: 75vw;
+  margin: 12em auto;
+  overflow: hidden;
+  white-space: nowrap;
+ }
+
+#img-carrousel div {
+  /* display: inline;
+  margin: 5em; */
+  /* white-space: pre; */
+  display: inline;
+  padding-left: 10%;
+  animation: marquee 4s linear infinite;
+ 
+ 
+}
+
+.logo {
+  width: 12%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.logo:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
 
 /* ------------------------------ Recent projects ------------------------------ */
 
-/* Your CSS code goes here */
+
 
 /* ------------------------------ Client reviews ------------------------------ */
 
