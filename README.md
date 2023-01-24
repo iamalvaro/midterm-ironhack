@@ -128,16 +128,17 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ###### Miercoles 25, Enero 2023
 
+- [ ] Hamburgues menu & carrousel
 - [ ] Esconder scroller cuando no me hace falta
 - [ ] Splash animation
 - [ ] About section
-- [ ] Efecto skew
 - [ ] api content
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
 - [ ] About finish animations
+- [ ] Efecto skew
 
 #### Day Five
 

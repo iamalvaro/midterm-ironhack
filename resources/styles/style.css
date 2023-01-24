@@ -80,7 +80,7 @@ nav button:hover {
   background-color: #292e47;
 }
 /* ------------------------------ Header ------------------------------ */
-.main-container{
+.main-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -403,7 +403,7 @@ footer a {
 }
 
 .grid-links {
-  width: 35%;
+  width: 37%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -505,22 +505,24 @@ form > button {
   padding: 2em 0;
 }
 
+
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
 
-.about-title {
-  /* font-size: 3em; */
-  /* flex-basis: 100%; */
-  /* align-self: center; */
-}
+/* .about-title {
+    font-size: 3em;
+    flex-basis: 100%;
+    align-self: center;
+} */
 
 #about-container {
   display: flex;
   width: 75vw;
   margin: 3em auto;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
+  align-items: center;
   
 }
 /* --------------------------------------------------------------------------- */
