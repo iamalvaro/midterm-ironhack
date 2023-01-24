@@ -11,15 +11,15 @@
     <nav>
       <img src="/resources/images/logos/circle.svg" alt="Circle logo">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">About</a></li>
+        <li><a id="nav-link-home" href="">Home</a></li>
+        <li><a id="nav-link-project" href="">Projects</a></li>
+        <li><a id="nav-link-services" href="">Services</a></li>
+        <li><a id="nav-link-about" href="">About</a></li>
       </ul>
       <button>Contact Us</button>
     </nav>
-    <div class="main-container">
-    <main>
+    <div>
+    <main class="main-container">
       <div class="title">
         <h1>Empower Your Business With Stunning Desing!</h1>
         <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
@@ -33,7 +33,6 @@
       </div>
     </main>
     <section id="img-carrousel">
-      <marquee>
       <div><a href=""><img class="logo" src="/resources/images/logos/Logo_NIKE.svg" alt="Nike"></a></div>
       <div><a href=""><img class="logo" src="/resources/images/logos/Adidas_Logo.svg" alt="Adidas"></a></div>
       <div><a href=""><img class="logo" src="/resources/images/logos/airbnb-logo.svg" alt="Airbnb"></a></div>
@@ -41,11 +40,10 @@
       <div><a href=""><img class="logo" src="/resources/images/logos/microsoft-logo.svg" alt="Microsoft"></a></div>
       <div><a href=""><img class="logo" src="/resources/images/logos/fedex-logo.svg" alt="FedEx"></a></div>
       <div><a href=""><img class="logo" src="/resources/images/logos/amazon-logo.svg" alt="Amazon"></a></div>
-    </marquee>
     </section>
     <section id="project-container">
       <h2>Recent Projects</h2>
-      <div id="flex-container">
+      <div class="flex-container">
         <div>
           <img src="/resources/images/projects-section/1.jpg" alt="Simplify graphic">
           <div class="card-text">
@@ -87,6 +85,68 @@
       <img class="test-emoji emoji3" src="/resources/images/testimonial-section/memoji-3.png" alt="testimonial 3">
       <img class="test-emoji emoji4" src="/resources/images/testimonial-section/memoji-4.png" alt="testimonial 4">
     </section>
-  </div>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="flex-container">
+        <div>
+          <div class="service-img">
+            <img src="/resources/images/services-section/icons/1.svg" alt="User interface design">
+          </div>
+          <div class="card-text">
+            <h3>User Interface Design</h3>
+            <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div>
+          <div class="service-img">
+            <img src="/resources/images/services-section/icons/2.svg" alt="User Experience Design">
+          </div>
+          <div class="card-text">
+            <h3>User Experience Design</h3>
+            <p>Circle always focuses on delivering the best user experience to your customers.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div>
+          <div class="service-img">
+            <img src="/resources/images/services-section/icons/3.svg" alt="Application Development">
+          </div>
+          <div class="card-text">
+            <h3>Application Development</h3>
+            <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe">
+      <h2>Do you have any questions?</h2>
+      <p>Let us help you!</p>
+      <div>
+        <input type="text" placeholder="Enter your email">
+        <button>Susbscribe</button>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <img src="/resources/images/logos/circle.svg" alt="Circle logo">
+        <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+      </div>
+      <div class="grid-links">
+        <a href="">Team</a>
+        <a href="">Services</a>
+        <a href="">About Us</a>
+        <a href="">Press</a>
+        <a href="">Projects</a>
+        <a href="">Privacy Policy</a>
+      </div>
+    </footer>
+    </div>
+    <div class="scroller hidden">
+      <h3>Scroll to top ↑</h3>
+    </div>
+    <script src="/resources/js/index.js"></script>
+    <script src="/resources/js/windowScroll.js"></script>
   </body>
 </html>

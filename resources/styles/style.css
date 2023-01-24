@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-   color: #292e47;
+  color: #292e47;
 }
 
 body {
@@ -26,7 +26,9 @@ h3{
   
   
 }
-
+textarea {
+  font-family: "Roboto", sans-serif;
+}
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
@@ -50,7 +52,7 @@ nav {
 }
 
 nav ul {
-  display: inline-flex;
+  display: flex;
   list-style-type: none;
 }
 
@@ -72,31 +74,38 @@ nav button {
   color: white;
   font-weight: 600;
   border: none;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #292e47;
 }
 /* ------------------------------ Header ------------------------------ */
-
-main {
+.main-container{
   display: flex;
   flex-direction: row;
-  width: 70vw;
   justify-content: space-around;
   align-items: center;
+
+}
+main {
+ 
+  width: 70vw;
+ 
   margin: 60px auto;  
 }
 main  > * {
-  /* flex: 1; */
   flex-basis: 100%;
 }
 
 main h1 {
   font-size: 3.75em;
-  width: 80%;
+  width: 85%;
   color: #292e47;
 }
 main p {
   font-size: 1.25em;
   color: #6B708D;
-  width: 68%; 
+  width: 77%; 
   text-align: justify;
   margin: 30px 0;
 }
@@ -107,7 +116,13 @@ main button {
   color: white;
   font-weight: 600;
   border: none;  
+  cursor: pointer;
 }
+
+main button:hover {
+  background-color: #292e47;
+}
+
 
 main a {
   text-decoration: none;
@@ -135,7 +150,7 @@ main a {
 }
 .banner-img img:nth-child(2){
   position: absolute;
-  left: -19%;
+  left: -5%;
   top: 0%;
   right: auto;
   bottom: auto;
@@ -146,8 +161,8 @@ main a {
   position: absolute;
   left: auto;
   top: auto;
-  right: 10%;
-  bottom: -22%;
+  right: -8%;
+  bottom: -20%;
   max-width: 45%;
   z-index: 2;
  
@@ -195,25 +210,19 @@ main a {
   margin: 0 auto;
 }
 
-#flex-container {
+.flex-container {
   display: flex;
   justify-content: center;
   gap: 2em;
-  margin: 3em 0;
-  
-  
+  margin: 3em 0;    
 }
-
-#flex-container > * {
+.flex-container > * {
   flex-basis: 100%;
   background-color: white;
-  flex-wrap: wrap;
- }
-
- #flex-container img {
+}
+ #project-container img {
   width: 100%;
-  height: 15em;
-  
+  height: 15em;  
  }
 
  .card-text {
@@ -228,19 +237,15 @@ main a {
   padding: 0.5em;
  }
 
- #flex-container a {
+ .flex-container a {
   text-decoration: none;
   color: var(--primary); 
   font-weight: 500;
   margin: 20px 0 0 0;
-
  }
-
-
 /* ------------------------------ Client reviews ------------------------------ */
 
-#reviews {
-  
+#reviews {  
   background-color: #292e47;
   background-image: url(/resources/images/testimonial-section/orbit.png);
   background-position: cover;
@@ -259,14 +264,13 @@ main a {
 #reviews h2 {
   font-size: 2em;
   color: white;
+  margin: 2em 0 0 0;
 }
 #reviews p {
   font-size: 1.5em;
   color: #ffc600;
+  width: 50%;
 }
-
-
-
 .test-emoji {
   width: 12%;
 }
@@ -301,22 +305,111 @@ main a {
 }
 
 #testimonial img{
-  border-radius: 100px;
-  width: 20%;
+  border-radius: 100%;
+  width: 30%;
   margin: 0 10px 0 0;
+
+}
+#testimonial h4{
+  color: #a2d6f9;
+}
+#testimonial h5{
+  color: white;
+}
+
+#testimonial > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* ------------------------------ Services ------------------------------ */
 
-/* Your CSS code goes here */
+#services {
+  width: 60vw;
+  margin: 5em auto;
+}
 
+.service-img {
+  width: 25%;
+  background-color: #f2f4fc; 
+  border-radius: 100%;
+  padding: 1em;
+  margin: 2em 2em 0;    
+}
 /* ------------------------------ Questions form ------------------------------ */
 
-/* Your CSS code goes here */
+#subscribe {
+  background-color: #ffc600;
+  width: 75vw;
+  height: 400px;
+  margin: 9em auto 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#subscribe p {
+  color: #6B708D;
+  padding: 2em 0;
+}
+
+#subscribe button {
+  background-color: var(--primary);
+  padding: 20px 30px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+#subscribe input {
+
+  padding: 20px 180px 20px 50px;
+  margin: 0 0.5em;
+  border: none;
+  background: url(/resources/images/newsletter/icon/mail.svg) no-repeat 3%;
+  background-size: 25px;
+  background-color: white;
+}
+
+
+
+
 
 /* ------------------------------ Footer ------------------------------ */
 
-/* Your CSS code goes here */
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 65vw;
+  margin: 6em auto;
+  /* align-content: center; */
+  align-items: center;
+}
+footer img {
+  width: 40%;
+  padding: 0 0 2em 0;
+}
+footer p {
+  font-weight: 300;
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary); 
+  font-weight: 500;
+  margin: 20px 0 0 0;
+}
+
+.grid-links {
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
@@ -324,22 +417,112 @@ main a {
 
 /* ------------------------------ Project main ------------------------------ */
 
-/* Your CSS code goes here */
+#project-main {
+  width: 65vw;
+  margin: 7em auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+ #project-main img {
+  width: 100%;
+  height: 500px;
+
+ }
+ #project-main > div {
+  display: flex;
+  width: 65vw;
+  justify-content: space-between;
+ }
+ #project-main h1{
+  width: 100%;
+ }
+ #project-main p{
+  margin: 2em 0;
+  width: 100%;
+ }
+
+ #project-main > div p:last-of-type{
+  align-self: flex-end;
+  text-align: right;
+ }
+
+
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
 
 /* ------------------------------ Form ------------------------------ */
+#contact-form {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+ }
 
-/* Your CSS code goes here */
+#contact-form h1 {
+  width: 100%;
+  margin: 0.5em 0 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;  
+}
+.form-secondary {
+  display: flex; 
+  gap: 1em; 
+}
+.form-secondary > * {
+  flex: 1;
+  
+}
+.sub-form-container {
+  display: flex;
+  flex-direction: column;  
+}
+form label {
+  color: #6B708D;
+  font-size: 1.3em;
+  margin: 0 8.4em 0 0;
+}
+form input {
+  background-color: #e6e8f3;
+  border: none;
+  padding: 1em;
+  margin: 0.25em 0 0.5em 0;
+  
+}
+form textarea  {
+  margin: 0.25em 0 1em 0;
+  background-color: #e6e8f3;
+  border: none;
+  padding: 1em;
+}
+
+form > button {
+  padding: 2em 0;
+}
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
 
-/* Your CSS code goes here */
+.about-title {
+  /* font-size: 3em; */
+  /* flex-basis: 100%; */
+  /* align-self: center; */
+}
 
+#about-container {
+  display: flex;
+  width: 75vw;
+  margin: 3em auto;
+  justify-content: center;
+  flex-direction: column;
+  
+}
 /* --------------------------------------------------------------------------- */
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
@@ -351,7 +534,46 @@ main a {
 
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
-  /* Your CSS code goes here */
+  .main-container{
+    flex-direction: column;
+    gap: 7em;
+  }
+  /* .main-container > *{
+    gap: 2em;
+    
+  } */
+
+
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .flex-container {
+    flex-wrap: wrap;
+    /* flex-direction: column;  */
+  }
+
+  .form-secondary {
+    flex-wrap: wrap;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    margin: 1.5em 0;    
+  }
+  nav > img {
+    width: 6em;
+  }
+  
+  footer {
+    flex-wrap: wrap;
+  }
+ 
+  .grid-links {
+    grid-row-gap: 0;
+  }
+  
 }
 
 /* ------------------------------ Hamburguer menu ------------------------------ */
@@ -363,5 +585,22 @@ main a {
 /* Your CSS code goes here */
 
 /* ------------------------------ Sticky scroll bar ------------------------------ */
-
-/* Your CSS code goes here */
+/* .hidden {
+  display: none;
+} */
+.active {
+  display: block; 
+}
+.scroller {
+  position: sticky;
+  z-index: 20;
+  bottom: 0;
+  background-color: #292e47;
+  text-align: center;
+  padding: 1em;
+  cursor: pointer;
+  overflow-y: auto;
+}
+.scroller h3{
+  color: white;
+}

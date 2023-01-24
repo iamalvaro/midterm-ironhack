@@ -111,23 +111,33 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [X] Crear Hero
 - [x] Crear marquee de logos --version cutre de momento
 - [X] Pulir algo styles
-- [ ] Crear section "projects" en html
+- [x] Crear section "projects" en html
 
 
 #### Day Two
 
 ###### Martes 24, Enero 2023
-- [ ] Acabar Home page con estilos
-- [ ] Empezar contact & about? too optimist.. 
+- [X] Acabar Home page con estilos
+- [X] Project page html & css
+- [X] Contact form  
 - [ ] Mejor marquee
+- [X] Empezar scroller 
+- [ ] Navbar links
 
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
 
+- [ ] Esconder scroller cuando no me hace falta
+- [ ] Splash animation
+- [ ] About section
+- [ ] Efecto skew
+- [ ] api content
+
 #### Day Four
 
 ###### Jueves 26, Enero 2023
+- [ ] About finish animations
 
 #### Day Five
 
