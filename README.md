@@ -100,22 +100,26 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 #### Backlog
 
-- [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
+<!-- - [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
 
-#### Day One
+#### Day One -->
 
 #### Day One
 
 ###### Lunes 23, Enero 2023
+- [x] Crear Navbar
+- [X] Crear Hero
+- [x] Crear marquee de logos --version cutre de momento
+- [X] Pulir algo styles
+- [ ] Crear section "projects" en html
 
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [ ] Ej - Crear section "projects" en html
-- [x] Ej - Crear section "projects" en html
 
 #### Day Two
 
 ###### Martes 24, Enero 2023
+- [ ] Acabar Home page con estilos
+- [ ] Empezar contact & about? too optimist.. 
+- [ ] Mejor marquee
 
 #### Day Three
 
