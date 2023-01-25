@@ -1,32 +1,23 @@
 /* Crea tu propia lógica para hacer scroll */
 const scrollBar = document.querySelector(".scroller"); 
 
-// const revealScrollBar = () => {
-//     let windowHeight = window.innerHeight;
-//     let revealPoint = 150;
+window.onscroll = function() {scrollFunction()};
 
-//     if (windowHeight > revealPoint) {
-//         scrollBar.classList.remove("hidden");
-//         scrollBar.classList.add("active");
-//     } else {
-//         scrollBar.classList.remove("active");
-//         scrollBar.classList.remove("hidden");
-//     }
-// }
-
-// scrollBar.addEventListener("scroll", revealScrollBar);
+function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        scrollBar.style.display = "block";
+    } else {
+        scrollBar.style.display = "none";
+}
+}
 
 const scrollToTop = () => {
     let scrollDestiny = document.querySelector("nav");
+    console.log(scrollDestiny)
     scrollDestiny.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "center",
     })
 }
 scrollBar.addEventListener("click", scrollToTop);
 
-
-// scrollBar.addEventListener("scroll", () => {
-//     scrollBar.classList.remove("hidden");
-//     scrollBar.classList.add("block");
-// });

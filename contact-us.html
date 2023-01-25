@@ -11,12 +11,28 @@
     <nav>
         <img src="/resources/images/logos/circle.svg" alt="Circle logo">
         <ul>
-          <li><a id="nav-link-home" href="">Home</a></li>
-          <li><a id="nav-link-project" href="#project-container">Projects</a></li>
+          <li><a id="nav-link-home" href="/index.html">Home</a></li>
+          <li><a id="nav-link-project" href="">Projects</a></li>
           <li><a id="nav-link-services" href="">Services</a></li>
-          <li><a id="nav-link-about" href="">About</a></li>
+          <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>
         </ul>
-        <button>Contact Us</button>
+        <button id="contact-us-btn">Contact Us</button>
+        <div class="burguer-menu">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+                <div class="menu-items">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="#project-container" onclick="() => null;">Projects</a></li>
+                  <li><a href="#services" onclick="() => null;">Services</a></li>
+                  <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>               
+                </div>
+            </div>
+        </div>      
     </nav>
     <main id="contact-form">
         <div id="title-contact">

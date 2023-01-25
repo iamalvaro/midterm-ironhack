@@ -11,23 +11,39 @@
     <nav>
         <img src="/resources/images/logos/circle.svg" alt="Circle logo">
         <ul>
-          <li><a id="nav-link-home" href="">Home</a></li>
+          <li><a id="nav-link-home" href="/index.html">Home</a></li>
           <li><a id="nav-link-project" href="">Projects</a></li>
           <li><a id="nav-link-services" href="">Services</a></li>
-          <li><a id="nav-link-about" href="">About</a></li>
+          <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>
         </ul>
-        <button>Contact Us</button>
+        <button id="contact-us-btn" onClick="window.location.href='/contact-us.html'">Contact Us</button>
+        <div class="burguer-menu">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+              <div class="menu-items">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#project-container" onclick="() => null;">Projects</a></li>
+                <li><a href="/index.html/#services" onclick="() => null;">Services</a></li>
+                <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>               
+              </div>
+          </div>
+        </div>      
     </nav>
     <main id="project-main">
         <h1>Projects</h1>
         <div>
-            <p>bal bal bla </p>
+            <p class="subheading">bal bal bla </p>
             <p>Completed on 2/2/22</p>
         </div>
         <div class="main-img">
         <img src="/resources/images/projects-section/1.jpg" alt="project image">
         </div>
-        <p>est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</p>
+        <p class="project-content">est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</p>
     </main>
     <section id="project-container">
         <h2>Other Projects</h2>
@@ -80,5 +96,6 @@
           <a href="">Privacy Policy</a>
         </div>  
       </footer>
+  <script src="/resources/js/project.js"></script>
 </body>
 </html>
