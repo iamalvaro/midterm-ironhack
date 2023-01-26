@@ -38,17 +38,84 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
+/* --------------------------SKEW EFFECT--------------------------- */
+#site-content {
+  will-change: transform;
+  transition: 0.5s ease transform;
+  
+}
+
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
 /* ------------------------------------------------------------------------ */
 
 /* ------------------------------ Splash page ------------------------------ */
+/* .loader-container {
+  background-color: #f2f4fc;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
 
-/* Your CSS code goes here */
+#site-content {
+  visibility: hidden;
+} */
+
+
 
 /* ------ CIRCULAR ANIMATION ------ */
 
-/* Your CSS code goes here */
+/* .loader {
+  align-self: center;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+		10px 10px 10px rgba(0, 0, 0, 0.4),
+		inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+		inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+	.loader::before {
+		content: "";
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		right: 25px;
+		bottom: 25px;
+		z-index: 10;
+		background: #f2f4fc;
+		border-radius: 50%;
+		box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+			inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+	}
+	
+  span {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: -1;
+		background: linear-gradient( #ffc600, #43d2ff);
+		filter: blur(20px);
+		animation: animate 0.5s linear infinite;
+	}
+
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} */
 
 /* ------------------------------ Navbar ------------------------------ */
 
@@ -170,70 +237,31 @@ main a {
 }
 
 /* ------------------------------ Partners ------------------------------ */
-
-#img-carrousel {
-  width: 70vw;
-  height: 400px;
-  margin: 12em auto 8em;
-  overflow: hidden;
-  white-space: nowrap;  
- }
-.marquee-inner span{
-  float:left;
-  width:50%;
+#logo-carrousel {
+  /* display: flex;  */
+  margin: 2em 3em;
+  /* flex-wrap: wrap; */
 }
 
+.slide-track {
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+    
+}
+.slide-temp {
+  display: none;
+}
 .logo {
-  width: 80%;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-adidas {
-  width: 50%;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  
-}
-.logo-nike {
-  width: 60%;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-}
-
-.logo:hover{
-  filter: none;
-  -webkit-filter: grayscale(0);
-}
-.marquee-inner{
-  display: inline;
-  /* align-items: center;
-  align-content: center; */
-  width: 200%;
-  margin: 0 200px;
-  position: absolute;
-  
-}
-.marquee-inner.to-left{
-  animation: marqueeLeft 25s linear infinite;
-}
-.marquee-item{
-  width: 230px;
-  /* height: auto; */
-  /* display: inline-block; */
-  margin: 0 10px;
-  float: left;
-  transition: all .2s ease-out;
-  align-self: center;
-}
-
-@keyframes marqueeLeft{
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+  width: 150px;
+  height: 100px;
 }
 
 
@@ -241,7 +269,7 @@ main a {
 #project-container{
   width: 65vw;
   margin: 0 auto;
-  margin-top: 16em;
+  margin-top: 7em;
 }
 
 .flex-container {
@@ -384,6 +412,13 @@ main a {
   align-items: center;
   justify-content: center;
 }
+#subscribe h2 {
+  text-align: center;
+}
+
+#sub-form {
+  display: flex;
+ }
 
 #subscribe p {
   color: #6B708D;
@@ -662,7 +697,7 @@ form > button {
 }
 
 .thylacine {
-  background: url(/resources/images/about/De-extinction-Company-Thylacine-Alamy-G3D397.webp) no-repeat 3%;
+  background: url(https://media.wired.com/photos/62fc31dd1037f5e51b6729d4/master/w_2560%2Cc_limit/De-extinction-Company-Thylacine-Alamy-G3D397.jpg) no-repeat 3%;
   background-size: 140%;
   object-position: 20% 0;
   background-position: right 20% top 40%;  
@@ -681,7 +716,10 @@ form > button {
   display: flex;
   flex-direction: column;
   border-radius: 30px;
+}
 
+.media-screen {
+  margin: 3em auto;
 }
 
 
@@ -691,18 +729,57 @@ form > button {
 /* --------------------------------------------------------------------------- */
 
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
+
+/* HIDE BURGUER MENU ON BIG SCREEN */
 @media (min-width: 766px) {
   .burguer-menu {
     display: none;
   }
+
+/* --------LOGO SLIDE ON BIG SCREEN--------------- */
+
+  #logo-carrousel {
+    max-width: 70%;
+    margin: 13em auto 6.5em auto;
+    overflow: hidden;
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: carousel 10s linear infinite;
+  }
+  
+  .slide, .slide-temp {
+    display: block;
+    width: 230px;
+    object-fit: cover;
+  }
+  .logo {
+    width: 200px;
+    height: 150px;
+    margin: 2em;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  .logo:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
+  
+  .slide-one > a > img {
+    width: 1500px;
+    height: 100px;
+    margin: 5px;
+  }
+  @keyframes carousel {
+    100%{
+      transform: translateX(-1600px);
+    }
+  }
 }
-
-
 @media (max-width: 990px) {
   /* Your CSS code goes here */
 }
-
-
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   .main-container{
@@ -713,6 +790,13 @@ form > button {
 .flip-card-container {
   flex-direction: column;
 
+  }
+  #sub-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #subscribe button {
+    padding: 20px 20px;
   }
 
   #subscribe input {
@@ -767,6 +851,13 @@ form > button {
   .grid-links {
     grid-row-gap: 0;
   }
+
+  .media-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   
 }
 
@@ -779,7 +870,8 @@ form > button {
 }
 
 .burguer-menu {
-  width: 100%;  
+  padding: 0 0 0 10em;
+  width: 60%;  
 }
 
 .nav-container {

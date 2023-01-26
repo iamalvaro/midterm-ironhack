@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="resources/styles/style.css" />
   </head>
   <body>
+    <!-- <div id="loader-container">
+      <div class="loader">
+        <span></span>
+        <span></span>
+      </div>
+    </div> -->
+  <div id="site-content">
     <nav>
       <img src="/resources/images/logos/circle.svg" alt="Circle logo">
       <ul>
@@ -48,48 +55,52 @@
         <img class="small-img" src="/resources/images/hero-section/card-2.png" alt="hero image succefull project">
       </div>
     </main>
-    <section class="img-carrousel">
-      <div class="marquee-inner to-left">
-				<span>
-					<div class="marquee-item">
-						<a href=""><img class="logo-nike" src="/resources/images/logos/Logo_NIKE.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo-adidas" src="/resources/images/logos/Adidas_Logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/airbnb-logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/google-logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/microsoft-logo.svg" alt="carrousel logo"></a>
-					</div>
-                    <div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/amazon-logo.svg" alt="carrousel logo"></a>
-					</div>
-				  <div class="marquee-item">
-						<a href=""><img class="logo-nike" src="/resources/images/logos/Logo_NIKE.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo-adidas" src="/resources/images/logos/Adidas_Logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/airbnb-logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/google-logo.svg" alt="carrousel logo"></a>
-					</div>
-					<div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/microsoft-logo.svg" alt="carrousel logo"></a>
-					</div>
-          <div class="marquee-item">
-						<a href=""><img class="logo" src="/resources/images/logos/amazon-logo.svg" alt="carrousel logo"></a>
-					</div>
-				</span>
-			</div>
-    </section>   
+    <section id="logo-carrousel">
+      <div class="slide-track">
+        <div class="slide">
+          <a href="https://www.nike.com" target="_blank"><img class="logo" src="/resources/images/logos/Logo_NIKE.svg" alt="nike logo"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.adidas.com" target="_blank"><img class="logo" src="/resources/images/logos/Adidas_Logo.svg" alt="adidas logo"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.airbnb.com" target="_blank"><img class="logo" src="/resources/images/logos/airbnb-logo.svg" alt="airbnb logo"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.google.com" target="_blank"><img class="logo" src="/resources/images/logos/google-logo.svg" alt="google logo"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.microsoft.com" target="_blank"><img class="logo" src="/resources/images/logos/microsoft-logo.svg" alt="microsoft logo"></a>
+        </div>
+        <div class="slide">
+          <a href="https://www.fedex.com" target="_blank"><img class="logo" src="/resources/images/logos/fedex-logo.svg" alt="fedex logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.amazon.com" target="_blank"><img class="logo" src="/resources/images/logos/amazon-logo.svg" alt="amazon logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.nike.com" target="_blank"><img class="logo" src="/resources/images/logos/Logo_NIKE.svg" alt="nike logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.adidas.com" target="_blank"><img class="logo" src="/resources/images/logos/Adidas_Logo.svg" alt="adidas logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.airbnb.com" target="_blank"><img class="logo" src="/resources/images/logos/airbnb-logo.svg" alt="airbnb logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.google.com" target="_blank"><img class="logo" src="/resources/images/logos/google-logo.svg" alt="google logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.microsoft.com" target="_blank"><img class="logo" src="/resources/images/logos/microsoft-logo.svg" alt="microsoft logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.fedex.com" target="_blank"><img class="logo" src="/resources/images/logos/fedex-logo.svg" alt="fedex logo"></a>
+        </div>
+        <div class="slide-temp">
+          <a href="https://www.amazon.com" target="_blank"><img class="logo" src="/resources/images/logos/amazon-logo.svg" alt="amazon logo"></a>
+        </div>
+      </div>
+    </section>		  
     <section id="project-container">
       <h2>Recent Projects</h2>
       <div class="flex-container">
@@ -172,9 +183,9 @@
     <section id="subscribe">
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
-      <div>
-        <input type="text" placeholder="Enter your email">
-        <button>Susbscribe</button>
+      <div id="sub-form">
+        <input id="email-sub" type="email" placeholder="Enter your email">
+        <button id="sub-button">Susbscribe</button>
       </div>
     </section>
     <footer>
@@ -182,20 +193,22 @@
         <img src="/resources/images/logos/circle.svg" alt="Circle logo">
         <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
       </div>
-      <div class="grid-links">
-        <a href="">Team</a>
-        <a href="">Services</a>
-        <a href="">About Us</a>
-        <a href="">Press</a>
-        <a href="">Projects</a>
-        <a href="">Privacy Policy</a>
-      </div>
-    </footer>
-    </div>
-    <div class="scroller hidden">
-      <h3>Scroll to top ↑</h3>
-    </div>
+        <div class="grid-links">
+          <a href="">Team</a>
+          <a href="">Services</a>
+          <a href="">About Us</a>
+          <a href="">Press</a>
+          <a href="">Projects</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      <!-- </div> -->
+    </footer>    
+  </div>
+  <div class="scroller hidden">
+    <h3>Scroll to top ↑</h3>
+  </div>
     <script src="/resources/js/windowScroll.js"></script>
     <script src="/resources/js/index.js"></script>
+    <script src="/resources/js/skew.js"></script>
   </body>
 </html>

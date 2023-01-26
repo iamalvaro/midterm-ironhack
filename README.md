@@ -120,7 +120,6 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 - [X] Acabar Home page con estilos
 - [X] Project page html & css
 - [X] Contact form  
-- [ ] Mejor marquee
 - [X] Empezar scroller 
 - [x] Navbar links
 
@@ -128,23 +127,26 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ###### Miercoles 25, Enero 2023
 
-- [x] Hamburgues menu & carrousel
+- [x] Hamburguesa menu
 - [x] Esconder scroller cuando no me hace falta
-- [ ] Splash animation
 - [x] About section
 - [x] api content
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
-- [ ] About finish animations
-- [ ] Efecto skew
-- [ ] 
+- [x] About finish animations
+- [x] About json content
+- [x] Efecto skew
+- [ ] Splash animation
+- [x] Logos slide
 
 #### Day Five
 
 ###### Viernes 27, Enero 2023
 - [ ] Acabar readme
+- [ ] Finish presentation
+- [ ] Toques finales
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,6 +170,9 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 Presentation Link: [Insert here your presentation link](insert-link-here)
+
+
+Alvaro Fernandez - [LinkedIn]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

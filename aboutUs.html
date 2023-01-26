@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="resources/styles/style.css" />
 </head>
 <body>
+  <div id="site-content">
     <nav>
         <img src="/resources/images/logos/circle.svg" alt="Circle logo">
         <ul>
@@ -35,7 +36,7 @@
         </div>      
     </nav>
     <div> 
-        <main id="about-container">
+    <main id="about-container">
         <div id="about-title">
             <h2>Company Values</h2>
         </div>
@@ -47,9 +48,11 @@
                     <img src="/resources/images/about/beer.png" alt="Beer" style="width:300px;height:300px;">
                   </div>
                   <div class="flip-card-back">
-                    <h1>Beer</h1>
-                    <p>Beer binds people together and serves to reinforce social hospitality and communality during ceremonial and everyday activities. The processing and consumption of beer pervades many cultural acts, and because of its social, economic and political value it is of great significance, both as a dietary staple and as a luxury food.</p>
-                    <p class="quote">"Because no great story ever started with someone eating a salad"<span class="quote-author"> - Anonymous genius</span></p>
+                    <h1 id="card-title-one"></h1>
+                    <p id="card-content-one"></p>
+                    <p id="quote-one" class="quote">
+                      <span id="author-one" class="quote-author"></span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -61,9 +64,11 @@
                     <img src="/resources/images/about/skateboard.png" alt="Skate" style="width:300px;height:300px;">
                   </div>
                   <div class="flip-card-back">
-                    <h1>Skateboard</h1>
-                    <p>Skateboarding damages urban terrain features such as curbs, benches, and ledges when skateboarders perform "grinds" and other tricks on these surfaces. Private industry has responded to this problem by using skate deterrent devices, such as the Skatestopper, in efforts to prevent further damage and to reduce skateboarding on these surfaces.</p>
-                    <p class="quote">"Skateboarding doesn't owe you sh**. It owes you wheel-bite in the rain. You owe skateboarding!" <span class="quote-author"><br>- Jake Phelps</span></p>
+                    <h1 id="card-title-two"></h1>
+                    <p id="card-content-two"></p>
+                    <p id="quote-two" class="quote">
+                      <br><span id="author-two" class="quote-author"></span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -116,8 +121,18 @@
             </div>
           </div>
         </div>
-    </div>
-  </main>
+        <h3 class="about-sub">Related Media</h3>
+        <div class="media-screen">
+          <iframe width="624" height="351" src="https://www.youtube.com/embed/AnKhF3Yzlno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="media-screen">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5j9zRzzYROKT2GFCTfUbSd/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="media-screen">
+          <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/were-dragons-real-animals-the-wild-times-105/id1506561489?i=1000585406332"></iframe>
+        </div>        
+      </div>
+    </main>
     <footer>
         <div>
           <img src="/resources/images/logos/circle.svg" alt="Circle logo">
@@ -132,5 +147,8 @@
           <a href="">Privacy Policy</a>
         </div>
     </footer>    
+    <script src="/resources/js/skew.js"></script>
+    <script src="/resources/js/about.js"></script>
+  </div>
 </body>
 </html>

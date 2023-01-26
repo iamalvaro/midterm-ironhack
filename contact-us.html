@@ -8,69 +8,73 @@
     <link rel="stylesheet" href="resources/styles/style.css" />
 </head>
 <body>
-    <nav>
-        <img src="/resources/images/logos/circle.svg" alt="Circle logo">
-        <ul>
-          <li><a id="nav-link-home" href="/index.html">Home</a></li>
-          <li><a id="nav-link-project" href="">Projects</a></li>
-          <li><a id="nav-link-services" href="">Services</a></li>
-          <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>
-        </ul>
-        <button id="contact-us-btn">Contact Us</button>
-        <div class="burguer-menu">
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                  <span class="line line1"></span>
-                  <span class="line line2"></span>
-                  <span class="line line3"></span>
-                </div>  
-                <div class="menu-items">
-                  <li><a href="/index.html">Home</a></li>
-                  <li><a href="#project-container" onclick="() => null;">Projects</a></li>
-                  <li><a href="#services" onclick="() => null;">Services</a></li>
-                  <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>               
-                </div>
-            </div>
-        </div>      
-    </nav>
-    <main id="contact-form">
-        <div id="title-contact">
-            <h1>Contact Us</h1>
-        </div>
-        <div>
-            <form action="">
-                <label for="name">Full Name*</label>
-                <input type="text" name="name" placeholder="Enter your full name">  
-                <div class="form-secondary">
-                    <div class="sub-form-container">
-                        <label for="email">Email</label>    
-                        <input type="email" name="email" id="" placeholder="Enter your email">  
-                    </div>                            
-                    <div class="sub-form-container">         
-                        <label for="Phone">Phone</label>                   
-                        <input type="text" name="Phone" id="" placeholder="Enter your phone">
+    <div id="site-content">
+        <nav>
+            <img src="/resources/images/logos/circle.svg" alt="Circle logo">
+            <ul>
+              <li><a id="nav-link-home" href="/index.html">Home</a></li>
+              <li><a id="nav-link-project" href="/project.html">Projects</a></li>
+              <li><a id="nav-link-services" href="">Services</a></li>
+              <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>
+            </ul>
+            <button id="contact-us-btn">Contact Us</button>
+            <div class="burguer-menu">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                    <div class="menu-items">
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="#project-container" onclick="() => null;">Projects</a></li>
+                      <li><a href="#services" onclick="() => null;">Services</a></li>
+                      <li><a id="nav-link-about" href="/aboutUs.html">About</a></li>               
                     </div>
                 </div>
-                <label for="">Message*</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-                <button>Submit</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <div>
-          <img src="/resources/images/logos/circle.svg" alt="Circle logo">
-          <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
-        </div>
-        <div class="grid-links">
-          <a href="">Team</a>
-          <a href="">Services</a>
-          <a href="">About Us</a>
-          <a href="">Press</a>
-          <a href="">Projects</a>
-          <a href="">Privacy Policy</a>
-        </div>  
-    </footer> 
+            </div>      
+        </nav>
+        <main id="contact-form">
+            <div id="title-contact">
+                <h1>Contact Us</h1>
+            </div>
+            <div>
+                <form action="">
+                    <label for="name">Full Name*</label>
+                    <input id="con-name" type="text" name="name" placeholder="Enter your full name">  
+                    <div class="form-secondary">
+                        <div class="sub-form-container">
+                            <label for="email">Email</label>    
+                            <input id="con-email" type="email" name="email" placeholder="Enter your email">  
+                        </div>                            
+                        <div class="sub-form-container">         
+                            <label for="Phone">Phone</label>                   
+                            <input id="con-phone" type="text" name="Phone" placeholder="Enter your phone">
+                        </div>
+                    </div>
+                    <label for="">Message*</label>
+                    <textarea id="con-message" name="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    <button id="contact-btn">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div>
+              <img src="/resources/images/logos/circle.svg" alt="Circle logo">
+              <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+            </div>
+            <div class="grid-links">
+              <a href="">Team</a>
+              <a href="">Services</a>
+              <a href="">About Us</a>
+              <a href="">Press</a>
+              <a href="">Projects</a>
+              <a href="">Privacy Policy</a>
+            </div>         
+        </footer> 
+    </div>
+    <script src="/resources/js/skew.js"></script>
+    <script src="/resources/js/contact.js"></script>
 </body>
 </html>
