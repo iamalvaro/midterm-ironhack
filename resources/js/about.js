@@ -23,8 +23,8 @@ let aboutUsContent = () => {
 
             skateTitle.innerHTML = res[1].title;
             skateContent.innerHTML = res[1].content;
-            skateQuote.innerHTML = res[1].quote;  
-            skateAuthor.innerHTML = res[1].quoteAuthor;  
+            skateQuote.innerText = res[1].quote;  
+            skateAuthor.innerText = res[1].quoteAuthor;  
          })
           .catch((error) => console.log(error));
         }

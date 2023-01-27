@@ -64,35 +64,59 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
+<h2>Circle Enterprises</h2>
 
-En esta sección se puede incluir información como:
+Este proyecto fue desarrollado como midterm proyect para
+un bootcamp de frontend de la escuela Ironhack. El objectivo era reproducir una web de una empresa ficticia, con el propósito poner en practica conocimientos de HTML, CSS y Javascript en su forma nativa
+bibliotecas ni frameworks.
 
-- Una descripción breve del proyecto y su propósito
-- Tecnologías utilizadas
-- Funcionalidades principales
-- Instrucciones de instalación y configuración
-- Enlaces a documentación adicional o recursos relacionados con el proyecto
-- Licencia del proyecto
-- Contribuciones de las personas en el proyecto.
 
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
+Tecnologías utilizadas:
+
+- HTML
+- CSS
+- JavaScript
+- VsCode
+- Google Chrome DevTools
+- GitHub
+
+El proyecto consta de 4 paginas
+
+Tanto el Index como la página de About Us estan compuestas por contenido estatico y texto de relleno obtenido a traves de una API, en el caso del Index, y un archivo JSON en el caso de una seccion de la pagina About Us.
+
+De esta manera se han puesto en práctica varios metodos para alimentar de contenido las diferentes secciones de la pagina.
+
+La página de Contact Us contiene un formulario que envia la información recogida a una API externa, a la vez que la muestra en la consola.
+
+Por ultimo, la página de projects se alimenta en su mayoria a través de la misma de texto de relleno.
+
+Texto de relleno obtenido a través de:
+  - [JSON Placeholder](https://jsonplaceholder.typicode.com/)
+
+Página-objetivo a clonar: 
+  - [Midterm Project](https://midterm-project.vercel.app/)
+
+Desarrollado por Alvaro Fernandez.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
+Los lenguages utlizados para este proyecto fueron:
 
-En esta sección se puede incluir información como:
+  - HTML
+  - CSS
+  - JavaScript
 
-- Lenguajes de programación utilizados
-- Frameworks y bibliotecas utilizadas
-- Herramientas de desarrollo (IDE, control de versiones, etc)
-- Servicios en la nube utilizados (si corresponde)
-- Otros recursos o tecnologías relacionadas con el proyecto.
+Todos los lenguages fueron utlizados en su version nativa. Sin uso alguno de bibliotecas o frameworks. 
 
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
+El editor de texto utilizado fue Visual Studio Code. Otras herrimientas utilizadas fueron, el emulador de terminal unix Hyper, para la gestion de directorios locales y repositorios en red. Git y Github para el control de veriones y el repositorio online.
+
+Vercel de utilizo para el alojar el trabajo en red desde el inicio del proyecto. Asi de podia compartir tanto con el teaching staff como con los compañeros del curso.
+
+Por último JSON Placeholdee se utilizo para la alimentar la web de contenidos dinamicos. 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,11 +131,11 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 #### Day One
 
 ###### Lunes 23, Enero 2023
-- [x] Crear Navbar
+- [X] Crear Navbar
 - [X] Crear Hero
-- [x] Crear marquee de logos --version cutre de momento
+- [X] Crear carrousel de logos --version cutre de momento
 - [X] Pulir algo styles
-- [x] Crear section "projects" en html
+- [X] Crear section projects en html
 
 
 #### Day Two
@@ -119,33 +143,33 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 ###### Martes 24, Enero 2023
 - [X] Acabar Home page con estilos
 - [X] Project page html & css
-- [X] Contact form  
+- [X] Contact form html & css 
 - [X] Empezar scroller 
-- [x] Navbar links
+- [X] Navbar links
 
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
 
-- [x] Hamburguesa menu
-- [x] Esconder scroller cuando no me hace falta
-- [x] About section
-- [x] api content
+- [X] Hamburguesa menu
+- [X] Esconder scroller cuando no me hace falta
+- [X] About section
+- [X] api content
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
-- [x] About finish animations
-- [x] About json content
-- [x] Efecto skew
+- [X] About acabar animaciones
+- [X] About json content
+- [X] Efecto skew
 - [ ] Splash animation
-- [x] Logos slide
+- [X] Logos slide
 
 #### Day Five
 
 ###### Viernes 27, Enero 2023
-- [ ] Acabar readme
-- [ ] Finish presentation
+- [x] Acabar readme
+- [x] Finish presentation
 - [ ] Toques finales
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -154,25 +178,14 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ## Acerca
 
-La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
+Alvaro Fernandez - [LinkedIn](https://www.linkedin.com/in/%C3%A1lvaro-fern%C3%A1ndez-%C3%A1lvarez-05243138/)
 
-En esta sección se puede incluir información como:
+Project Link: [Repositorio de GitHub](https://github.com/iamalvaro/midterm-ironhack)
 
-- Nombre y datos de contacto del desarrollador o equipo.
-- Información sobre experiencia laboral o académica relacionada con el proyecto.
-- Enlaces a perfiles en redes sociales o sitios web personales.
-- Otra información relevante que el desarrollador o equipo desee compartir.
+Presentation Link: [GoogleSlides](https://docs.google.com/presentation/d/19BEvSum0caDO4QKsYZPqLwTD6rLWvkk8RzWKGqYQIxs/edit?usp=sharing)
 
-En resumen, la sección "sobre mí" es una excelente manera de brindar a los usuarios y contribuidores una idea de quién está detrás del proyecto y cómo pueden ponerse en contacto con ellos si tienen preguntas o comentarios. Es una buena manera de establecer una conexión con la comunidad de desarrolladores y una forma de mostrar la transparencia en el proyecto.
+Actualmente soy un estudiantes de desarrollo web Frontend en IronHack Barcelona. Antes de empezar este bootcamp habia estudiado a través de Udemy y freeCodeCamp desarrollo web durante medio año.
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-Presentation Link: [Insert here your presentation link](insert-link-here)
-
-
-Alvaro Fernandez - [LinkedIn]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,43 +193,36 @@ Alvaro Fernandez - [LinkedIn]
 
 ## agradecimientos
 
-La sección "agradecimientos" en un archivo README es una sección que proporciona reconocimiento a las personas o instituciones que ayudaron en el desarrollo del proyecto.
+Me gustaria agradecer a IronHack la oportunidad de poder participar en este Bootcamp.
 
-En esta sección se puede incluir información como:
+A nuestro profesor y project manager Diego Zito por labor docente y motivacion diaria.
 
-- Agradecimientos específicos a personas que ayudaron en el desarrollo del proyecto.
-- Agradecimientos a instituciones o organizaciones que proporcionaron apoyo financiero o recursos.
-- Enlaces a proyectos o recursos relacionados que fueron útiles para el desarrollo del proyecto.
+A los dos excelentes teacher assistants, Aleix y Jarko, por su paciencia y su manera única de provocarnos nuevas formas de ver el codigo y en entenderlo en mayor profundidad. 
 
-En resumen, la sección "agradecimientos" es una excelente manera de agradecer a las personas o instituciones que ayudaron en el desarrollo del proyecto. Esta sección también puede ser útil para dar crédito a los recursos o proyectos relacionados que fueron útiles durante el desarrollo.
+Por último me gustaría agradecer a mis compañeros el apoyo que me han ofrecido esta semana de trabajo. Tanto por compartir referencias o consejos técnicos, como por el apoyo anímico, siempre a través del humor. 
 
-- [Icon Libraries](insert-link-here)
-- [Google Font Libraries](insert-link-here)
+
+
+- [Icon Libraries](https://www.flaticon.com/)
+- [Google Font Libraries](https://fonts.google.com/specimen/Roboto)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Desafío Técnico
+## Desafío Técnicos
 
-La sección "desafío técnico" aunque no es convencional en un proyecto profesional, en nuestro curso dependemos de esta sección en un archivo README para proporcionar información sobre los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto.
+Los principales problemas técnico con los que me tope fueron sobre todo los componentes animados con CSS cuyo comportamiento a veces me parecia impredecible.
 
-En esta sección se puede incluir información como:
+El slider de logos me llevo varias versiones hasta que me conforme con una bastante aceptable, aunque no consegui que la animación fuese fluida del todo.
 
-- Problemas técnicos específicos que se encontraron durante el desarrollo del proyecto.
-- Soluciones implementadas para superar estos desafíos.
-- Aspectos del proyecto que aún son un desafío o que requieren mejora continua.
-- Recomendaciones para futuros desarrolladores que trabajen en el proyecto.
+El burguer menu tambien me llevo bastante tiempo, y no he acabado del todo contento con el resultado final. Tal vez si hubiese concebido el navbar con el burger menu en mente desde el principio me hubiese resultado más facil integrarlo al final.
 
-En resumen, la sección "desafío técnico" es una excelente manera de brindar a los usuarios y contribuidores una idea de los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto, y cómo se abordaron. Esta sección también puede ser útil para futuros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y soluciones para superarlos.
+La animación splash, o la página de carga tambien me supuso un desfio, en este caso un desafio que acabe abandonando, con tal de priorizar otros aspectos del proyecto. La parte de javascript no fue el problema, consegui que se comportara tal y como se le pedia. Pero no consegui integrarlo dentro del contenido de manera satisfactoria. 
+
 
 ## Grande Error
 
-La sección "grande error" en un archivo README es una sección opcional que proporciona información sobre los errores importantes cometidos durante el desarrollo del proyecto.
+El mayor error cometido en este proyecto, sobretodo cuando se tiene en cuenta un posible futuro mantenimiento o crecimiento de la web, fue el desorden en el codigo. Sobretodo en el CSS. 
 
-En esta sección se puede incluir información como:
+Para futuros proyectos tendre como prioridad la creación de clases reutilizables con el fin de reducir lineas de CSS. Para esto creo que ayudaria tener un mayor planning previo antes de comenzar a escribir codigo. 
 
-- Descripción detallada del error cometido.
-- Consecuencias del error.
-- Soluciones implementadas para corregir el error.
-- Lecciones aprendidas y recomendaciones para evitar errores similares en el futuro.
-
-En resumen, la sección "grande error" es una forma de ser transparente sobre los errores cometidos durante el desarrollo del proyecto. También puede ser útil para otros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y cómo se abordaron.
+Tenia en mente la necesidad de refactorizar codigo el último dia. Pero al final, por la falta de tiempo no lo lleve a cabo.

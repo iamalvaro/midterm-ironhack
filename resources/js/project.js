@@ -3,6 +3,16 @@
     const projectsTitle = document.querySelector("#project-main h1");
     const projectsSubtitle = document.querySelector(".subheading");
     const projectsContent = document.querySelector(".project-content");
+
+    const projectsTitleTwo = document.querySelector("#project-main-two h1");
+    const projectsSubtitleTwo = document.querySelector(".subheading-two");
+    const projectsContentTwo = document.querySelector(".project-content-two");
+
+    const projectsTitleThree = document.querySelector("#project-main-three h1");
+    const projectsSubtitleThree = document.querySelector(".subheading-three");
+    const projectsContentThree = document.querySelector(".project-content-three");
+
+    console.log(projectsTitleTwo,projectsTitleThree,projectsSubtitleTwo, projectsContentThree)
 // console.log(projectsTitle)
 // console.log(projectsSubtitle)
 // console.log(projectsContent)
@@ -12,9 +22,25 @@ fetch('https://jsonplaceholder.typicode.com/todos/1/posts')
       .then(response => response.json())
       .then((res) => {
         // console.log(res)
-        projectsTitle.innerText = res[3].title;
-        projectsSubtitle.innerHTML = res[2].title;
-        projectsContent.innerText = res[33].body;    
+        
+        if(projectsTitle){
+          projectsTitle.innerText = res[0].title.substring(0, 20);
+          projectsSubtitle.innerHTML = res[0].title;
+          projectsContent.innerText = res[0].body;
+        } 
+        
+        if (projectsTitleTwo){
+          projectsTitleTwo.innerText = res[1].title.substring(0, 20);
+          projectsSubtitleTwo.innerHTML = res[1].title;
+          projectsContentTwo.innerText = res[1].body;
+        }
+        if (projectsContentThree){
+          projectsTitleThree.innerText = res[2].title.substring(0, 20);
+          projectsSubtitleThree.innerHTML = res[2].title;
+          projectsContentThree.innerText = res[2].body;          
+        }     
+
+      
       })
       .catch((error) => console.log(error));
     }
@@ -29,7 +55,7 @@ let loremContentTitle = () => {
 fetch('https://jsonplaceholder.typicode.com/todos/1/posts')
       .then(response => response.json())
       .then((res) => {
-        console.log(res)
+        // console.log(res)
         for (i = 0; i < cardTitle.length; i++) {
             cardTitle[i].innerText = res[i].title.substring(0, 20);
                 // console.log(res[i].title)
